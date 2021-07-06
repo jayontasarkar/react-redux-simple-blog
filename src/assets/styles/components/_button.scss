@@ -22,7 +22,7 @@
   cursor: pointer;
 
   &-primary {
-    @include alert-variant('#fff', '#007bff', '#007bff');
+    @include alert-variant(#fff, #007bff, #007bff);
   }
 
   &-link {
@@ -32,10 +32,10 @@
   }
 
   &-dark {
-    @include alert-variant('#fff', '#343a40', '#343a40');
+    @include alert-variant(#fff, #343a40, #343a40);
   }
 
   &-info {
-    @include alert-variant('#fff', '#17a2b8', '#17a2b8');
+    @include alert-variant(#fff, #17a2b8, #17a2b8);
   }
 }

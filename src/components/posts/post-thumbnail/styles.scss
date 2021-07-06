@@ -1,0 +1,20 @@
+.post-thumbnail {
+  .post-title {
+    a {
+      text-decoration: none;
+      font-size: 1.3em;
+      line-height: 40px;
+      color: #000;
+      transition: 0.5s all ease-in-out;
+
+      &:hover {
+        color: royalblue;
+      }
+    }
+  }
+
+  .post-content {
+    font-size: 1em;
+    line-height: 25px;
+  }
+}

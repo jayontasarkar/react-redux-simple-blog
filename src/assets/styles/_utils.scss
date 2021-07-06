@@ -1,0 +1,25 @@
+@mixin justify-content($position) {
+  justify-content: $position !important;
+}
+
+.justify-content {
+  &-center {
+    @include justify-content(center);
+  }
+  &-end {
+    @include justify-content(flex-end);
+  }
+}
+
+$sides: (top, bottom, left, right);
+@for $space from 1 through 100 {
+  @each $side in $sides {
+    .m#{str-slice($side, 0, 1)}-#{$space} {
+      margin-#{$side}: #{$space}px !important;
+    }
+
+    .p#{str-slice($side, 0, 1)}-#{$space} {
+      padding-#{$side}: #{$space}px !important;
+    }
+  }
+}

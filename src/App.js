@@ -5,12 +5,14 @@ import Navigation from './components/navigation';
 
 function App() {
   return (
-    <Router>
-      <Navigation />
-      <div className="container">
-        <Routes />
-      </div>
-    </Router>
+    <div className="App">
+      <Router>
+        <Navigation />
+        <div className="container">
+          <Routes />
+        </div>
+      </Router>
+    </div>
   );
 }
 
