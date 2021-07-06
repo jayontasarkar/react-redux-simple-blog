@@ -12,7 +12,7 @@ function PostList() {
   const posts = useSelector(state => state.posts.collection);
   const [pagination, setPagination] = useState({
     currentPage: 1,
-    pageSize: 2
+    pageSize: 5
   });
 
   useEffect(() => {
