@@ -1,0 +1,42 @@
+.header {
+  border-bottom: 1px solid $border-color;
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem 1.8rem;
+  }
+
+  .nav {
+    &-menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      list-style-type: none;
+    }
+
+    &-item {
+      margin-left: 5rem;
+      list-style: none;
+    }
+
+    &-link {
+      font-size: 1rem;
+      font-weight: 400;
+      color: #475569;
+      text-decoration: none;
+    }
+
+    &-link:hover {
+      color: #482ff7;
+    }
+
+    &-logo {
+      font-size: 1.3rem;
+      font-weight: 500;
+      color: #482ff7;
+      text-decoration: none;
+    }
+  }
+}

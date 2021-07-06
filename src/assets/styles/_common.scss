@@ -1,0 +1,12 @@
+@mixin justify-content($position) {
+  justify-content: $position !important;
+}
+
+.justify-content {
+  &-center {
+    @include justify-content('center');
+  }
+  &-end {
+    @include justify-content('flex-end');
+  }
+}

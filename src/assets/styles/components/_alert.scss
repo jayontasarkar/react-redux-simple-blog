@@ -1,0 +1,49 @@
+@mixin alert-variant($color, $background-color, $border-color) {
+  color: $color;
+  background-color: $background-color;
+  border-color: $border-color;
+}
+
+.alert {
+  position: relative;
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  width: 93%;
+
+  &-success {
+    @include alert-variant('#0f5132', '#d1e7dd', '#badbcc');
+  }
+
+  &-danger {
+    @include alert-variant('#842029', '#f8d7da', '#f5c2c7');
+  }
+
+  &-info {
+    @include alert-variant('#055160', '#cff4fc', '#b6effb');
+  }
+
+  &-warning {
+    @include alert-variant('#664d03', '#fff3cd', '#ffecb5');
+  }
+
+  &-secondary {
+    @include alert-variant('#41464b', '#e2e3e5', '#d3d6d8');
+  }
+
+  &-close {
+    box-sizing: content-box;
+    width: 1em;
+    height: 1em;
+    padding: 0.25em 0.25em;
+    color: #000;
+    border: 0;
+    border-radius: 0.25rem;
+    opacity: 0.5;
+    float: right;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}
