@@ -1,0 +1,53 @@
+.media-object {
+  display: flex;
+  align-items: center;
+}
+.avatar {
+  margin-right: 10px;
+}
+.avatar img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.media-content {
+  margin: 0;
+  padding: 0;
+}
+.name {
+  margin: 4px;
+  padding: 0;
+  font-size: 0.9em;
+  color: royalblue;
+  font-weight: bold;
+}
+.date {
+  margin: 4px;
+  font-size: 0.9em;
+}
+
+.comment-content {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  padding-left: 15px;
+}
+
+.Comment--Container {
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+.replies {
+  margin-left: 25px;
+  border-left: 1px solid #f7f6fa;
+  padding-left: 10px;
+}
+.comment {
+  border: 1px solid #f5f5f5;
+  padding: 10px;
+}
+
+.reply {
+  margin-top: 10px;
+  background-color: #f2f6ff;
+  border-radius: 5px;
+}
